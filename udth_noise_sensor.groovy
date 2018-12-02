@@ -209,11 +209,11 @@ metadata {
 	}
 
 	// tile definitions
-tiles (scale:1) {
+	tiles (scale:1) {
     	multiAttributeTile(name:"switch", type: "generic", width: 6, height: 2, canChangeIcon: true){
 			tileAttribute ("device.uDTH", key: "PRIMARY_CONTROL") {
-				attributeState "noise", label: '${name}', icon: "st.switches.switch.on", backgroundColor: "#53a7c0"
-				attributeState "quiet", label: '${name}', icon: "st.switches.switch.off", backgroundColor: "#ffffff"
+				attributeState "on", label: 'noise', icon: "st.switches.switch.on", backgroundColor: "#53a7c0"
+				attributeState "off", label: 'quiet', icon: "st.switches.switch.off", backgroundColor: "#ffffff"
 			}
         }
 		standardTile("contact", "device.contact", inactiveLabel: false, height:2, width:2, canChangeIcon: false) {
